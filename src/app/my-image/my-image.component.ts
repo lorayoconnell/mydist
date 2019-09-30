@@ -5,17 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './my-image.component.html',
   styleUrls: ['./my-image.component.css']
 })
-export class MyImageComponent implements OnInit {
 
-  someVariable = 'some image variable';
+export class MyImageComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  imgFunction() {
-    console.log('inside MyImageComponent');
   }
 
 }

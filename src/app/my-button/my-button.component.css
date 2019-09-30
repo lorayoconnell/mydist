@@ -1,6 +1,6 @@
 
-.wrapper {
-    border: 3px solid red;
-    margin: 1em;
-    padding: 1em;
+.wrapper { }
+
+.is-liked {
+    background-color: green;
 }

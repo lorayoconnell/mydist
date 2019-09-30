@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyImageComponent } from './my-image/my-image.component';
 import { MyButtonComponent } from './my-button/my-button.component';
+import { MyServiceService } from './my-service.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,10 @@ import { MyButtonComponent } from './my-button/my-button.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    MyServiceService    // not in imports[]?
+  ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

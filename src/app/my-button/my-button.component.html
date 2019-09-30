@@ -1,10 +1,7 @@
+
 <div class="wrapper">
 
-    <p>my-button works!</p>
-
-    {{btnVar}}
-    <br><br>
-
-    <button (click)="btn()">btn-component</button>
+    <button [ngClass]="{'is-liked' : isLiked == true}" (click)="btn()">Like</button>
+    <span>Image is liked == {{ isLiked }}</span>
 
 </div>
