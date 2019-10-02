@@ -13,8 +13,8 @@ export class MessagesService {
 
   createInitMessages(): Message[] {
       this.messages = [
-        new Message('user1', 'content1'),
-        new Message('user2', 'content2'),
+        new Message('Loray', 'Jk - my code works ' + String.fromCodePoint(0x1F600)),
+        new Message('JoeUser2', 'content2'),
       ];
       console.log("initial mock messages array is created");
       return this.messages;

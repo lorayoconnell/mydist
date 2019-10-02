@@ -11,7 +11,7 @@ div.something {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    width: 25%;
+    width: 28%;
     border-right: 1px solid #777;
 }
 
@@ -26,7 +26,7 @@ div.something {
 }
 
 .content {
-    width: 75%;
+    width: 72%;
     align-items: center;
 }
 
