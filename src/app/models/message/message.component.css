@@ -1,0 +1,36 @@
+
+.msg-wrapper {
+    position: relative;
+    display: flex;
+    width:100%;
+    border: 1px solid #555;
+    margin: 0.25em 0;
+}
+
+div.something {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 25%;
+    border-right: 1px solid #777;
+}
+
+.msg {
+    display: flex;
+    font-family: Helvetica;
+    padding: 0.2em 0.4em;
+}
+
+.username {
+    font-size: 18px;
+}
+
+.content {
+    width: 75%;
+    align-items: center;
+}
+
+.timestamp {
+    color: #666;
+    font-size: 12px;
+}

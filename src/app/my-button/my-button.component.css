@@ -1,6 +1,28 @@
 
-.wrapper { }
+.wrapper {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    min-width: 360px;
+    max-width:512px;
+    margin: 0.5em auto 0;
+}
 
 .is-liked {
     background-color: green;
+    color: #fff;
 }
+
+button, span {
+    display: flex;
+    color: #333;
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height:24px;
+    padding: 0 1em;
+}
+
+button {
+    cursor: pointer;
+}
+

@@ -1,9 +1,30 @@
-<div>
-  <h1>
-    Welcome to {{title}}!
-  </h1>
+<div class="mydist-wrapper">
+
+  <header>
+    <h1>
+      Welcome to {{title}}!
+    </h1>
+  </header>
+
+  <app-my-image></app-my-image>
+  <app-my-button></app-my-button>
+
+
+  <!-- use # to assign tags to a local variable
+      then we can pass them as variables into the function -->
+
+  <form>
+    <div>
+        <input name="username" id="username" placeholder="username" #newusername>
+    </div>
+    <div>
+        <textarea name="content" id="content" placeholder="content" #newcontent></textarea>
+    </div>
+    <button (click)="getMessage(newusername,newcontent)">Submit</button>
+  </form>
+
+  <div class="messages">
+    <app-message *ngFor="let msg of messages" [message]="msg"></app-message>
+  </div>
+
 </div>
-
-<app-my-button></app-my-button>
-<app-my-image></app-my-image>
-

@@ -1,0 +1,62 @@
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    font-family: Helvetica;
+}
+
+h1 {
+    text-align:center;
+}
+
+.mydist-wrapper, form, .messages {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.mydist-wrapper {
+    width: 50vw;
+    min-width: 360px;
+    max-width:512px;
+    margin: 0.6em auto;
+}
+
+form, .messages {
+    width: 100%; 
+}
+
+form {
+    margin-top: 0.5em;
+}
+
+input, button, textarea {
+    display: flex;
+    font-family: Helvetica;
+    font-size: 18px;
+    line-height:28px;
+}
+
+input, textarea {
+    width:100%;
+    padding: 0 0.5em;
+    margin: 0.3em 0;
+    border: 1px solid #555;
+}
+
+button {
+    width: 50%;
+    justify-content: center;
+    margin: 0.5em auto;
+}
+
+textarea {
+    resize: none;
+}
+
+.messages > * {
+    display: flex;
+    width: 100%;
+}

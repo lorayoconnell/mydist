@@ -18,7 +18,7 @@ import { MyServiceService } from './my-service.service';
     MyButtonComponent,
     MessageComponent,
     MessagesComponent,
-    UserComponent
+    UserComponent,
   ],
   imports: [
     BrowserModule,

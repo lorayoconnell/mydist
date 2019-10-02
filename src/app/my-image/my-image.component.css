@@ -1,8 +1,18 @@
+* {
+    box-sizing: border-box;
+}
 
-.wrapper { }
+.wrapper {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    min-width: 360px;
+    max-width:512px;
+    margin: 0 auto;
+}
 
 img {
-    border: 2px solid #555;
-    width: 300px;
-    height:auto;
+    display: flex;
+    width: 100%;
+    height: auto;
 }
