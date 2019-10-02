@@ -1,5 +1,17 @@
 # Mydist
 
+https://github.com/lorayoconnell/mydist
+
+Completed all requirements and also the extra credit.
+Also additional css styling.
+
+
+For some reason, rather than using 'models/message/message.component.ts', I created 'models/message/message.model.ts'. I think I was following the book code for the reddit clone.
+These should probably be merged.
+
+
+/**********************/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
 ## Development server

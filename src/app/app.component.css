@@ -25,9 +25,11 @@ form, .messages, input, textarea, .messages > * {
 }
 
 .mydist-wrapper {
+    padding: 1.4em;
+    background-color: #dde;
     width: 50vw;
-    min-width: 360px;
-    max-width:512px;
+    min-width: 440px;
+    max-width:568px;
     margin: 0.6em auto;
 }
 
@@ -43,13 +45,15 @@ input, button {
 input {
     padding: 0 0.5em;
     margin: 0.3em 0;
-    border: 1px solid #555;
+    border: 1px solid #777;
+    border-radius: 5px;
 }
 
 textarea {
     padding: 0.5em;
     margin: 0.3em 0;
-    border: 1px solid #555;
+    border: 1px solid #777;
+    border-radius: 5px;
     font-size: 18px;
     line-height:22px;
     resize: none;
@@ -59,5 +63,17 @@ button {
     width: 50%;
     justify-content: center;
     margin: 0.5em auto;
+    border: 1px solid #777;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+button:active {
+    background-color: #777;
+    color: #fff;
+}

@@ -5,7 +5,7 @@
 .wrapper {
     display: flex;
     position: relative;
-    width: 50vw;
+    width: 100%;
     min-width: 360px;
     max-width:512px;
     margin: 0 auto;
@@ -15,4 +15,6 @@ img {
     display: flex;
     width: 100%;
     height: auto;
+    border: 1px solid #aaa;
+    border-radius: 8px;
 }

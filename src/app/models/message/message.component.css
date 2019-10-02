@@ -3,8 +3,11 @@
     position: relative;
     display: flex;
     width:100%;
-    border: 1px solid #555;
+    border: 1px solid #777;
+    border-radius: 8px;
+    background-color: #fefefe;
     margin: 0.25em 0;
+    transition: all 0.2s;
 }
 
 div.something {
@@ -12,7 +15,7 @@ div.something {
     flex-direction: column;
     align-content: space-between;
     width: 28%;
-    border-right: 1px solid #777;
+    border-right: 1px solid #888;
 }
 
 .msg {
@@ -33,4 +36,10 @@ div.something {
 .timestamp {
     color: #666;
     font-size: 12px;
+}
+
+.msg-wrapper:hover {
+    border: 1px solid #222;
+    box-shadow: 0 0 12px 1px #ccc;
+    /* transform: scale(1.03); */
 }

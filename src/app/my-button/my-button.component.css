@@ -18,11 +18,18 @@ button, span {
     color: #333;
     font-family: Helvetica;
     font-size: 16px;
-    line-height:24px;
-    padding: 0 1em;
+    line-height:20px;
+    padding: 0 0.6em;
 }
 
 button {
     cursor: pointer;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #999;
+    color: #fff;
 }
 
