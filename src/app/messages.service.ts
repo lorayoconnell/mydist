@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
-
-//import { MessageComponent } from './models/message/message.component';
-//import { MessagesComponent } from './models/messages/messages.component';
-//import { UserComponent} from './models/user/user.component';
+import { Message } from './models/message/message.model';
 
 @Injectable({
   providedIn: 'root'
@@ -10,22 +7,18 @@ import { Injectable } from '@angular/core';
 
 export class MessagesService {
 
+  messages: Message[];
+
   constructor() { }
 
-  //createMessages() {
-    
-    // msg: new MessageComponent(UserComponent["username"], 'string1');
-
-    //   addMessage(msg); // add to import statement above?
-
-    // MessagesComponent;  // do this by indiv messages...?
-
-  //}
-
-//  addMessage(username: string, content: string) {
-
-//  }
-
+  createInitMessages(): Message[] {
+      this.messages = [
+        new Message('user1', 'content1'),
+        new Message('user2', 'content2'),
+      ];
+      console.log("initial mock messages array is created");
+      return this.messages;
+  }
 
 }
 

@@ -1,35 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { MessageComponent } from '../message/message.component';
+import { MessagesService } from '../../messages.service';
+
+import { Message } from '../message/message.model';
 
 @Component({
   selector: 'app-messages',
   templateUrl: './messages.component.html',
   styleUrls: ['./messages.component.css']
 })
+
 export class MessagesComponent implements OnInit {
 
-  messages: MessageComponent[];
+  messages: Message[];
 
-  /*
-  constructor() {
-    this.messages = [
-      new MessageComponent('time1', 'string1'),
-      new MessageComponent('time2', 'string2'),
-      new MessageComponent('time3', 'string3'),
-    ];
-  }
-  */
-
-  constructor() {
-    this.messages;  // ... this isn't doing anything ... 
+  constructor(public messagesService: MessagesService) {    
   }
 
-  ngOnInit() {
-  }
-
-  addMessage(msg: MessageComponent) {
-    this.messages.push(msg);
-  }
-
+  ngOnInit() { }
 
 }

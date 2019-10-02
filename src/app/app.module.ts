@@ -10,6 +10,7 @@ import { MessagesComponent } from './models/messages/messages.component';
 import { UserComponent } from './models/user/user.component';
 
 import { MyServiceService } from './my-service.service';
+import { MessagesService } from '../app/messages.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MyServiceService } from './my-service.service';
     AppRoutingModule
   ],
   providers: [
-    MyServiceService    // not in imports[]?
+    MyServiceService,
+    MessagesService
   ],
   bootstrap: [AppComponent]
 })

@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-header {
+header, input, button, textarea {
     font-family: Helvetica;
 }
 
@@ -11,10 +11,17 @@ h1 {
     text-align:center;
 }
 
-.mydist-wrapper, form, .messages {
+.mydist-wrapper, form, .messages, input, button, textarea, .messages > * {
     display: flex;
+}
+
+.mydist-wrapper, form, .messages {
     flex-direction: column;
     position: relative;
+}
+
+form, .messages, input, textarea, .messages > * {
+    width: 100%; 
 }
 
 .mydist-wrapper {
@@ -24,26 +31,28 @@ h1 {
     margin: 0.6em auto;
 }
 
-form, .messages {
-    width: 100%; 
-}
-
 form {
     margin-top: 0.5em;
 }
 
-input, button, textarea {
-    display: flex;
-    font-family: Helvetica;
+input, button {
     font-size: 18px;
     line-height:28px;
 }
 
-input, textarea {
-    width:100%;
+input {
     padding: 0 0.5em;
     margin: 0.3em 0;
     border: 1px solid #555;
+}
+
+textarea {
+    padding: 0.5em;
+    margin: 0.3em 0;
+    border: 1px solid #555;
+    font-size: 18px;
+    line-height:22px;
+    resize: none;
 }
 
 button {
@@ -52,11 +61,3 @@ button {
     margin: 0.5em auto;
 }
 
-textarea {
-    resize: none;
-}
-
-.messages > * {
-    display: flex;
-    width: 100%;
-}
